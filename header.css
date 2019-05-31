@@ -1,0 +1,83 @@
+@CHARSET "UTF-8";
+
+/* header全体 */
+#header {
+	/* 要素の位置を固定する */
+	position: fixed;
+	float: left;
+	width: 100%;
+	height: 60px;
+	padding: 10px;
+	background-color: #323735;
+	/* 領域(要素)の幅の最小値 これ以上小さくならない */
+	min-width: 10px;
+	/* ヘッダーを最前面に持ってくる */
+	z-index: 999;
+	top: 0;
+}
+
+#header-menu {
+	float: left;
+	width: 90%;
+	top: 25%;
+	position: relative;
+	height: 60px;
+}
+
+#categoryId {
+	width: 100%;
+	font-size: 14px;
+	height: 20px;
+}
+
+.txt-keywords {
+	position: relative;
+	width: 60%;
+	margin-left: 1rem;
+	padding: 0.4em 0.2em 0.4em 2em;
+	border: none;
+	color: #aaa;
+	border-radius: 1em;
+	box-shadow: inset 1px 1px 2px 1px rgba(0, 0, 0, 0.35);
+	font-size: 14px;
+	background: #fff url(../img/mark_search.png) 8px 50% no-repeat;
+}
+
+#header-menu select {
+	width: 100%;
+	cursor: pointer;
+}
+
+#header-menu ul {
+	float: left;
+	margin-top: 15px;
+	margin-left: 20px;
+	margin: 0 auto;
+	width: 90%;
+	padding: 0;
+}
+
+#header-menu ul li {
+	/* 縦でなく横並びにする */
+	display: inline-block;
+	/* 箇条書きの黒丸を消す */
+	list-style: none;
+	padding-left: 1px;
+	color: white;
+	font-size: 12px;
+}
+
+#header-title {
+	float: left;
+	height: 60px;
+	width: 10%;
+	font-family: 'Vidaloka', serif;
+	color: #ffffff;
+	font-size: 17px;
+}
+
+#header-title img {
+	width: 100%;
+	height: 100%;
+	padding-top: 1vh;
+}
